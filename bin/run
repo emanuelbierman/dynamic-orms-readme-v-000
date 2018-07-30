@@ -11,6 +11,9 @@ puts "song album: " + song.album
 song.save
 
 puts self.table_name
+
 self.column_names.each {|d| puts d }
+
+self.send(:name)
 
 DB[:conn].execute("SELECT * FROM songs")
