@@ -18,4 +18,7 @@ puts song.send(:name)
 puts song.send(:name=, "Hallo")
 puts song.send(:name)
 
+song.save
+puts song.send(:name)
+
 DB[:conn].execute("SELECT * FROM songs")
