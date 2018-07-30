@@ -10,9 +10,9 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
-puts song.table_name
+puts song.class.table_name
 
-song.column_names.each {|d| puts d }
+song.class.column_names.each {|d| puts d }
 
 song.send(:name)
 
