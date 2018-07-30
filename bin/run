@@ -16,5 +16,6 @@ song.class.column_names.each {|d| puts d }
 
 puts song.send(:name)
 puts song.send(:name=, "Hallo")
+puts song.send(:name)
 
 DB[:conn].execute("SELECT * FROM songs")
