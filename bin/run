@@ -18,6 +18,6 @@ puts song.send(:name=, "Hallo")
 puts song.send(:name)
 
 song.save
-puts song.find_by_name()
+puts song.find_by_name(self.name)
 
 DB[:conn].execute("SELECT * FROM songs")
