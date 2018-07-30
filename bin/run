@@ -10,10 +10,10 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
-puts self.table_name
+puts song.table_name
 
-self.column_names.each {|d| puts d }
+song.column_names.each {|d| puts d }
 
-self.send(:name)
+song.send(:name)
 
 DB[:conn].execute("SELECT * FROM songs")
